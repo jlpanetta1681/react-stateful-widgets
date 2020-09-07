@@ -46,11 +46,11 @@ STEP 6:
   This click handler needs to use 'setCount' to set the 'count' to be zero again.
 */
 
-import React from 'react'; /* STEP 0 */
+import React, { useState } from 'react'; /* STEP 0 */
 
 export default function Counter() {
-  /* STEP 1 */
-
+  const [count, setCount] = useState(0);
+}
   const increment = () => {
     /* STEP 4 */
   };
@@ -62,9 +62,10 @@ export default function Counter() {
   };
 
   const style = {
+  return even ? 'royalBlue' : 'crimson'
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'royalblue', /* STEP 2 */
+    /* STEP 2 */
   };
 
   return (
@@ -79,5 +80,6 @@ export default function Counter() {
         <button id='resetCount' onClick={reset}>Reset</button>
       </div>
     </div>
+
   );
 }
