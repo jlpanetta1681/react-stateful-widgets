@@ -52,14 +52,15 @@ export default function Counter() {
       /* STEP 1 */
 
   const increment = () => {
-    /* STEP 4 */
+    setCount(count + 1);/* STEP 4 */
   };
   const decrement = () => {
+    setCount(count - 1); /* STEP 6 */
     /* STEP 5 */
   };
   const reset = () => {
-    /* STEP 6 */
-  };
+     setCount(0);
+ };
 
   const style = {
     fontSize: '1.5em',

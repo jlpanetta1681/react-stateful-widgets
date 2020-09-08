@@ -54,7 +54,7 @@ export default function Input() {
     fontSize: '1.5em',
     marginBottom: '0.3em',
     color: 'royalblue', /* STEP 2 */
-    color: inputValue.length > 10 ? 'crimson' : 'royalblue',
+    color: (inputValue.length > 10) ? 'crimson' : 'royalblue',
   
   };
 
@@ -62,7 +62,7 @@ export default function Input() {
     <div className='widget-input container'>
       <h2>Input</h2>
       <div id='output' style={style}></div> {
-      <div style ={style}>{inputValue.toUpperCase()}</div>/* STEP 3 */}
+      <div style={style}>{inputValue.toUpperCase()}</div>/* STEP 3 */}
       <div>
         <input id='input' type='text' onChange={changeInput} /> 
         <input id='input' type='text' onChange={changeInput}  value={inputValue} /> {/* STEP 6 */}
